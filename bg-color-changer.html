@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            background-color: red;
+            border: none;
+            border-radius: 8px;
+            width: 70px;
+            height: 30px;
+        }
+        .orange{
+            background-color:orange;
+            border: none;
+            border-radius: 8px;
+            width: 70px;
+            height: 30px;
+        }
+        .yellow{
+            background-color: yellow;
+            border: none;
+            border-radius: 8px;
+            width: 70px;
+            height: 30px;
+        }
+        .green{
+            background-color:rgb(145, 225, 24);
+            border: none;
+            border-radius: 8px;
+            width: 70px;
+            height: 30px;
+        }
+        .skyblue{
+            background-color:skyblue;
+            border: none;
+            border-radius: 8px;
+            width: 70px;
+            height: 30px;
+        }
+        .blue{
+            background-color: blue;
+            border: none;
+            border-radius: 8px;
+            width: 70px;
+            height: 30px;
+        }
+        .purple{
+            background-color: purple;
+            border: none;
+            border-radius: 8px;
+            width: 70px;
+            height: 30px;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+             height: 100vh;
+             gap: 10px;
+        }
+    </style>
+</head>
+<body>
+        <div class="container">
+        <button class="red" onclick= "colorChange('red')">Red</button>
+        <button class="orange" onclick= "colorChange('orange')">Orange</button>
+        <button class="yellow" onclick= "colorChange('yellow')">Yellow</button>
+        <button class="green" onclick="colorChange('rgb(145, 225, 24)')">Green</button>
+        <button class="skyblue" onclick="colorChange('skyblue')">SkyBlue</button>
+        <button class="blue" onclick= "colorChange('blue')">Blue</button>
+        <button class="purple" onclick= "colorChange('purple')">Purple</button>
+
+        </div>
+    <script>
+            function colorChange(color) {
+            // Change the background color based on the button clicked
+            document.body.style.backgroundColor = color;
+            }
+    </script>
+</body>
+</html>
+
